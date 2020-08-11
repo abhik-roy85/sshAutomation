@@ -130,8 +130,7 @@ class SshConn:
 
 
 if __name__ == "__main__":
-    conn = SshConn("ral-abroyvm", username="abroy", password="Root@123", prompt_string="abroy@ral-abroyvm:")
-    # conn = SshConn("10.0.0.2", username="root", password="itron")
+    conn = SshConn("10.0.0.2", username="root", password="root")
 
     if conn.status == "connected":
         ret = conn.run_cmd("ifconfig")
